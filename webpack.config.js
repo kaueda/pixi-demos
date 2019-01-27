@@ -26,8 +26,8 @@ module.exports = {
     plugins: [
         new CopyWebpackPlugin([
             {
-            from: './assets/**/**',
-            flatten: true,
+				from: './assets/**/**',
+				flatten: true,
             },
             {
                 from: 'index.html'
