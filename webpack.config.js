@@ -4,10 +4,10 @@ const CopyWebpackPlugin = require('copy-webpack-plugin-advanced');
 module.exports = {
     mode: 'development',
     context: path.resolve(__dirname, 'src'),
-	entry: './scripts/app.js',
+	entry: './scripts/main.js',
 	output: {
 		path: path.resolve(__dirname, 'public/build'),
-		filename: 'app.bundle.js'
+		filename: 'game.bundle.js'
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'src'),
