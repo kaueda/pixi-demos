@@ -111,17 +111,10 @@ game.stage.addChild(buttonIcoTxtLabel);
 game.stage.addChild(buttonFireFX);
 game.stage.addChild(buttonFireFXLabel);
 
-const gameContainer = new PIXI.Container();
-
-// Listen for window resize events
-window.addEventListener('resize', () => {
+let gameResizer = () => {
     // Resize the renderer
     game.renderer.resize(window.innerWidth, window.innerHeight);
-    
-    // You can use the 'screen' property as the renderer visible
-    // area, this is more useful than view.width/height because
-    // it handles resolution
-    // rect.position.set(game.screen.width, game.screen.height);
+
     if (game.screen.width > stdScreen.width) {
         game.stage.scale.x = 1;
     } else {
@@ -133,4 +126,7 @@ window.addEventListener('resize', () => {
     } else {
         game.stage.scale.y = game.screen.height/stdScreen.height;
     }
-});
+};
+// Listen for window resize events
+window.addEventListener('resize', gameResizer);
+gameResizer();
