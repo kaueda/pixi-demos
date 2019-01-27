@@ -6,7 +6,7 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
 	entry: './scripts/main.js',
 	output: {
-		path: path.resolve(__dirname, 'public/build'),
+		path: path.resolve(__dirname, 'docs'),
 		filename: 'game.bundle.js'
     },
     devServer: {
