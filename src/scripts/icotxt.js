@@ -15,8 +15,6 @@ export function setup(game) {
         todoTxt.position.set(game.screen.width/2, game.screen.height/2);
         todoTxt.anchor.set(0.5);
 
-        console.log(todoTxt.position);
-
         icotxtContainer.addChild(todoTxt);
         icotxtContainer.visible = false;
     }
