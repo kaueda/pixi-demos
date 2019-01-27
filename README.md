@@ -1,1 +1,1 @@
-## Access the demos at [link](https://kaueda.github.io/pixi-demos/)
+## Access the demos [here](https://kaueda.github.io/pixi-demos/)
