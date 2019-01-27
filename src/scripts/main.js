@@ -111,22 +111,22 @@ game.stage.addChild(buttonIcoTxtLabel);
 game.stage.addChild(buttonFireFX);
 game.stage.addChild(buttonFireFXLabel);
 
-let gameResizer = () => {
-    // Resize the renderer
-    game.renderer.resize(window.innerWidth, window.innerHeight);
+// let gameResizer = () => {
+//     // Resize the renderer
+//     game.renderer.resize(window.innerWidth, window.innerHeight);
 
-    if (game.screen.width > stdScreen.width) {
-        game.stage.scale.x = 1;
-    } else {
-        game.stage.scale.x = game.screen.width/stdScreen.width;
-    }
+//     if (game.screen.width > stdScreen.width) {
+//         game.stage.scale.x = 1;
+//     } else {
+//         game.stage.scale.x = game.screen.width/stdScreen.width;
+//     }
 
-    if (game.screen.height > stdScreen.height) {
-        game.stage.scale.y = 1;
-    } else {
-        game.stage.scale.y = game.screen.height/stdScreen.height;
-    }
-};
-// Listen for window resize events
-window.addEventListener('resize', gameResizer);
-gameResizer();
+//     if (game.screen.height > stdScreen.height) {
+//         game.stage.scale.y = 1;
+//     } else {
+//         game.stage.scale.y = game.screen.height/stdScreen.height;
+//     }
+// };
+// // Listen for window resize events
+// window.addEventListener('resize', gameResizer);
+// gameResizer();

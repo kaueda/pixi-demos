@@ -10,10 +10,10 @@ let cardsContainer = new PIXI.Container();
 
 export function setup(game) {
     if (cardsContainer.children.length === 0) {
-        PIXI.loader.add('../assets/cards.json').load(() => {
+        PIXI.loader.add('./assets/cards.json').load(() => {
             game.stage.addChild(cardsContainer);
             
-            let sheet = PIXI.loader.resources['../assets/cards.json'].spritesheet;
+            let sheet = PIXI.loader.resources['./assets/cards.json'].spritesheet;
             let nTex = 54;
     
             let x = 10;
